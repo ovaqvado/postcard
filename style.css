@@ -42,3 +42,14 @@ body {
     text-align: center;
     padding: 10px; /* уменьшение внутренних отступов */
 }
+
+@media only screen and (max-width: 600px) {
+    .card {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .billet__doux {
+        padding: 5px;
+    }
+}
