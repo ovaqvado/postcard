@@ -1,55 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url('./img/hurts.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+body {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: column;  
+    background-image: url('./img/hurts.jpg');  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+}  
+  
+.container{  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    background-color: rgb(249, 255, 243);  
+    border: 3px solid red;  
+    border-radius: 20px;  
+}  
+
+.card{  
+    width: 550px;  
+    height: 600px;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: column;  
+    font-size: 30px;  
+    padding: 50px;  
+}  
+
+.billet__doux {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: column;  
+    color: rgb(156, 105, 84);  
+    font-family: "Dancing Script", cursive;  
+    text-align: center;  
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(249, 255, 243);
-    border: 3px solid red;
-    border-radius: 20px;
-    width: 90%; /* ширина контейнера на 90% ширины экрана */
-}
-
-.card{
-    width: 100%; /* ширина карты на всю ширину контейнера */
-    height: auto; /* автоматическая высота */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 20px; /* уменьшение размера шрифта */
-    padding: 20px; /* уменьшение внутренних отступов */
-}
-
-.billet__doux {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: rgb(156, 105, 84);
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-    padding: 10px; /* уменьшение внутренних отступов */
-}
-
-@media only screen and (max-width: 600px) {
-    .card {
-        font-size: 16px;
-        padding: 10px;
+@media only screen and (max-width: 700px) {
+    body {  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        flex-direction: column;  
+        background-image: url('./img/hurts.jpg');  
+        background-size: cover;  
+        background-repeat: no-repeat;  
+    }  
+      
+    .container{  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        background-color: rgb(249, 255, 243);  
+        border: 3px solid red;  
+        border-radius: 20px;  
+    }  
+    
+    .card{  
+        width: 350px;  
+        height: 400px;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        flex-direction: column;  
+        font-size: 10px;  
+        padding: 5px;  
+    }  
+    
+    .billet__doux {  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        flex-direction: column;  
+        color: rgb(156, 105, 84);  
+        font-family: "Dancing Script", cursive;  
+        text-align: center;  
     }
-
-    .billet__doux {
-        padding: 5px;
-    }
+    
 }
